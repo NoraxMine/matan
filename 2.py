@@ -1,7 +1,8 @@
-from sympy import symbols, integrate
+from sympy import symbols, integrate, sqrt
+
 
 x = symbols('x')
-f = x**2  # Функция для интегрирования
+f = (4-(x**2)) # Функция для интегрирования
 
 # Вычисляем определённый интеграл от 0 до 2
 integral_definite = integrate(f, (x, 0, 2))
